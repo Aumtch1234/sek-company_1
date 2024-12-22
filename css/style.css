@@ -20226,3 +20226,112 @@ disabled look for disabled choices in the results dropdown
 .modal-body {
 	padding: 29px 30px 35px;
 }
+
+/* Layout */
+.job-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+/* Card */
+.job-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.job-title {
+    color: #2196F3;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Intro */
+.job-intro {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* List */
+.qualifications-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.qualification-item {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+}
+
+.qualification-item::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+/* Apply Button */
+.apply-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #2196F3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #1976D2;
+	color: #fff;
+}
+
+/* Header */
+header.page-header {
+    padding: 0.25rem 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+header .header-title {
+    margin: 1rem 0;
+	
+}
+
+.benefits-section {
+    text-align: left; /* Align the content to the left */
+}
+/* Benefits Section */
+.benefits-category h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.benefits-list {
+    padding-left: 20px;  /* เพิ่มการเยื้องเล็กน้อย */
+    list-style-type: disc; /* ทำให้มีจุดหน้ารายการ */
+    margin: 0; /* กำจัด margin ที่ไม่จำเป็น */
+}
+
+.benefit-item {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
